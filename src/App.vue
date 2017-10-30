@@ -1,23 +1,59 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <router-view/>
+    <div id="content">
+      <router-view/>
+    </div>
+    <tarbar></tarbar>
   </div>
 </template>
 
 <script>
+import '@/common/reset.js'
+import Tarbar from '@/components/Tarbar'
 export default {
-  name: 'app'
+  name: 'app',
+  components: {
+    Tarbar
+  }
 }
 </script>
 
 <style>
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background: #ccc;
+}
+ul, ol, li{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+}
+img{
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  width: 100%;
+  height: 100%;
+}
+#content{
+  width: 100%;
+  position: relative;
+  /* top: 66px; */
+  top: 0;
+  bottom: 66px;
+  left: 0;
+  right: 0;
+  overflow: auto;
+}
+.main{
+  position: relative;
+  top: 66px;
 }
 </style>
