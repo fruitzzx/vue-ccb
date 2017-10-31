@@ -24,7 +24,7 @@ export default {
 <style scoped>
 #header{
     width: 100%;
-    height: 66px;
+    height: 50px;
     background: skyblue;
     font-size: 16px;
     position: fixed;
@@ -38,8 +38,8 @@ export default {
 }
 #header ul li{
     width: 20%;
-    height: 66px;
-    line-height: 66px;
+    height: 50px;
+    line-height: 50px;
     float: left;
     text-align: center;
 }
@@ -47,25 +47,25 @@ export default {
     width: 60%;
 }
 #header ul li span{
-    font-size: 36px;
+    font-size: 3rem;
     /* text-align: center; */
     color: white;
 }
 #header ul li:nth-of-type(2) input{
     width: 100%;
-    height: 40px;
+    height: 2.6rem;
     outline: none;
     border: none;
-    border-radius: 20px;
-    padding-left: 40px;
+    border-radius: 3rem;
+    padding-left: 3.5rem;
     color: #dbdbdb;
-    font-size: 20px;
+    font-size: 1.8rem;
     background: url(../common/img/seach.svg) no-repeat 10px center;
     background-color: white;
-    background-size: 25px 25px;
+    background-size: 2rem 2rem;
 }
 #header ul li:nth-of-type(2) span{
-    font-size: 24px;
+    font-size: 2rem;
 }
 </style>
 

@@ -34,7 +34,7 @@ export default {
 <style>
 #tarbar{
     width: 100%;
-    height: 66px;
+    height: 50px;
     background: black;
     font-size: 16px;
     position: fixed;
@@ -47,8 +47,9 @@ export default {
     text-align: center;
     float: left;
     color: white;
+    padding-top: 0.5rem;
 }
 #tarbar ul li span{
-    font-size: 28px;
+    font-size: 2rem;
 }
 </style>

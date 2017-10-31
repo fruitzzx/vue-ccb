@@ -47,14 +47,14 @@ img{
   position: relative;
   /* top: 66px; */
   top: 0;
-  bottom: 66px;
+  bottom: 50px;
   left: 0;
   right: 0;
   overflow: auto;
 }
 .main{
   position: relative;
-  top: 66px;
+  top: 50px;
 }
 .menuCard{
   height: 10rem;
