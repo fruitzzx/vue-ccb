@@ -233,7 +233,6 @@
       <br>
       <br>
       <br>
-      <br>
     </div>
   </div>
 </template>
@@ -267,26 +266,6 @@ export default {
   padding-top: 1.2rem;
   font-size: 1.2rem;
   color: white;
-}
-.cardOne{
-  padding: 0.3rem 0.3rem;
-  background: white;
-}
-.cardOne>ul{
-  width: 100%;
-  height: 5rem;
-  margin: 1.5rem 0;
-}
-.cardOne>ul li, .menuDB ul li{
-  width: 25%;
-  float: left;
-  font-size: 1.2rem;
-  text-align: center;
-  margin: 0.5rem 0;
-}
-.cardOne>ul li span, .menuDB ul li span{
-  font-size: 3.2rem;
-  color: skyblue;
 }
 .menuDB{
   width: 100%;

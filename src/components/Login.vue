@@ -35,12 +35,12 @@ export default {
 <style scoped>
 #login{
     width: 100%;
-    height: 16rem;
+    height: 18rem;
     background: skyblue;
 }
 .login{
   width: 100%;
-  height: 8rem;
+  height: 9rem;
   text-align: center;
   padding-top: 1rem;
 }
@@ -54,7 +54,7 @@ export default {
 }
 #login ul {
   width: 100%;
-  height: 8rem;
+  height: 9rem;
   padding-top: 2rem;
 }
 #login ul li{
