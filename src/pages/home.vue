@@ -2,7 +2,7 @@
   <div id="home">
     <tarbar-header seach=true headerTitle=搜索></tarbar-header>
     <div class="main">
-      <login loginContent=登录可查询余额></login>
+      <login loginContent=登录可查询余额 txt1=财富 txt2=转账 txt3=快贷 txt4=龙支付 span1="icon-touzi" span2="icon-weibiaoti5" span3="icon-daikuan1" span4="icon-longzhifu-copy"></login>
       <div class="homeOne">
         <ul>
           <li>

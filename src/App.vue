@@ -52,6 +52,9 @@ img{
   right: 0;
   overflow: auto;
 }
+.hui{
+  background: #dbdbdb;
+}
 .main{
   position: relative;
   top: 50px;
@@ -90,7 +93,7 @@ img{
 }
 .cardOne>ul{
   width: 100%;
-  height: 5rem;
+  height: 6.1rem;
   margin: 1.5rem 0;
 }
 .cardOne>ul li, .menuDB ul li{

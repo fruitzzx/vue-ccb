@@ -59,7 +59,7 @@ export default {
     border-radius: 3rem;
     padding-left: 3.5rem;
     color: #dbdbdb;
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     background: url(../common/img/seach.svg) no-repeat 10px center;
     background-color: white;
     background-size: 2rem 2rem;

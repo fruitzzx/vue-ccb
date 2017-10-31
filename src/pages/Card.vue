@@ -48,74 +48,74 @@
             <mt-swipe-item>
               <ul>
                 <li>
-                  <span class="iconfont icon-huankuan"></span><br>
-                  为本人还款
+                  <span class="iconfont icon-xinyongqia"></span><br>
+                  信用卡申请
                 </li>
                 <li>
-                  <span class="iconfont icon-fenqifu"></span><br>
-                  账单分期
+                  <span class="iconfont icon-edu"></span><br>
+                  额度调整
                 </li>
                 <li>
-                  <span class="iconfont icon-fenqigou"></span><br>
-                  现金分期
+                  <span class="iconfont icon-chaxun"></span><br>
+                  调额申请查询
                 </li>
                 <li>
-                  <span class="iconfont icon-fenqi"></span><br>
-                  为他人还款
+                  <span class="iconfont icon-yuedinghuankuanriqi"></span><br>
+                  约定还款
                 </li>
               </ul>
               <!-- <hr> -->
               <ul>
                 <li>
-                  <span class="iconfont icon-huankuan"></span><br>
-                  为本人还款
+                  <span class="iconfont icon-xinyongka-jihuo"></span><br>
+                  信用卡激活
                 </li>
                 <li>
-                  <span class="iconfont icon-fenqifu"></span><br>
-                  账单分期
+                  <span class="iconfont icon-zhanghumimaguanli"></span><br>
+                  密码管理
                 </li>
                 <li>
-                  <span class="iconfont icon-fenqigou"></span><br>
-                  现金分期
+                  <span class="iconfont icon-my"></span><br>
+                  个人资料
                 </li>
                 <li>
-                  <span class="iconfont icon-fenqi"></span><br>
-                  为他人还款
+                  <span class="iconfont icon-qiapianguashi"></span><br>
+                  信用卡挂失
                 </li>
               </ul>
             </mt-swipe-item>
             <mt-swipe-item>
               <ul>
                 <li>
-                  <span class="iconfont icon-huankuan"></span><br>
-                  为本人还款
+                  <span class="iconfont icon-huanqia"></span><br>
+                  损坏换卡
                 </li>
                 <li>
-                  <span class="iconfont icon-fenqifu"></span><br>
-                  账单分期
+                  <span class="iconfont icon-chaxun"></span><br>
+                  分期查询
                 </li>
                 <li>
-                  <span class="iconfont icon-fenqigou"></span><br>
-                  现金分期
+                  <span class="iconfont icon-banqiajinduchaxun"></span><br>
+                  办卡进度查询
                 </li>
                 <li>
-                  <span class="iconfont icon-fenqi"></span><br>
-                  为他人还款
+                  <span class="iconfont icon-ERP_yinhangqia"></span><br>
+                  龙卡e付卡
                 </li>
               </ul>
               <!-- <hr> -->
               <ul>
                 <li>
-                  <span class="iconfont icon-huankuan"></span><br>
-                  为本人还款
+                  <span class="iconfont icon-xiane"></span><br>
+                  交易限额
                 </li>
                 <li>
-                  <span class="iconfont icon-fenqifu"></span><br>
-                  账单分期
+                  <span class="iconfont icon-shenpi"></span><br>
+                  预审批额度
                 </li>
                 <li>
-                  <span class="iconfont icon-fenqigou"></span><br>
-                  现金分期
+                  <span class="iconfont icon-qia-"></span><br>
+                  卡标志
                 </li>
               </ul>
             </mt-swipe-item>
@@ -269,7 +269,7 @@ export default {
 }
 .menuDB{
   width: 100%;
-  height: 12rem;
+  height: 14rem;
 }
 table{
   width: 100%;
@@ -300,9 +300,6 @@ table tr td{
 }
 .menuCard p{
   font-size: 1rem;
-}
-.hui{
-  background: #dbdbdb;
 }
 .menuDBImg{
   height: 8rem;

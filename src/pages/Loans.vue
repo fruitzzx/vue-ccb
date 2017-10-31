@@ -2,7 +2,7 @@
   <div id="loans">
     <tarbar-header seach='false' headerTitle='贷款'></tarbar-header>
     <div class="main">
-      <login loginContent=登录可查询贷款></login>
+      <login loginContent=登录可查询贷款 txt1=还款 txt2=借贷通 txt3=支用 txt4=我的贷款 span1="icon-huankuan" span2="icon-daikuan1" span3="icon-zhiyongjilu" span4="icon-wodedaikuan"></login>
       <div class="cardOne">
         <ul>
           <li>

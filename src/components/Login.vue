@@ -6,20 +6,20 @@
       </div>
       <ul>
         <li>
-          <span class="iconfont icon-touzi"></span><br>
-          财富
+          <span class="iconfont" :class=span1></span><br>
+          {{txt1}}
         </li>
         <li>
-          <span class="iconfont icon-weibiaoti5"></span><br>
-          转账
+          <span class="iconfont" :class=span2></span><br>
+          {{txt2}}
         </li>
         <li>
-          <span class="iconfont icon-daikuan1"></span><br>
-          快贷
+          <span class="iconfont" :class=span3></span><br>
+          {{txt3}}
         </li>
         <li>
-          <span class="iconfont icon-longzhifu-copy"></span><br>
-          龙支付
+          <span class="iconfont" :class=span4></span><br>
+          {{txt4}}
         </li>
       </ul>
   </div>
@@ -27,7 +27,7 @@
 
 <script>
 export default {
-  props: ['loginContent']
+  props: ['loginContent', 'txt1', 'txt2', 'txt3', 'txt4', 'span1', 'span2', 'span3', 'span4']
 }
 </script>
 
