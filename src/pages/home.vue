@@ -2,28 +2,7 @@
   <div id="home">
     <tarbar-header seach=true headerTitle=搜索></tarbar-header>
     <div class="main">
-      <div class="login">
-        <span class="iconfont icon-login"></span><br>
-        <p>查询余额请登录</p>
-      </div>
-      <ul>
-        <li>
-          <span class="iconfont icon-touzi"></span><br>
-          财富
-        </li>
-        <li>
-          <span class="iconfont icon-weibiaoti5"></span><br>
-          转账
-        </li>
-        <li>
-          <span class="iconfont icon-daikuan1"></span><br>
-          快贷
-        </li>
-        <li>
-          <span class="iconfont icon-longzhifu-copy"></span><br>
-          龙支付
-        </li>
-      </ul>
+      <login loginContent=登录可查询余额></login>
       <div class="homeOne">
         <ul>
           <li>
@@ -62,7 +41,7 @@
           </li>
         </ul>
       </div>
-      <lbt></lbt>
+      <lbt-u-i img1="https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=3184141841,117106269&fm=27&gp=0.jpg" img2="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=2017023583,3353199622&fm=27&gp=0.jpg" img3="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=577381051,417275712&fm=27&gp=0.jpg"></lbt-u-i>
       <many menuHeaderName=龙支付>
         <div class="menuImg">
             <img src="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=2887272181,2202751516&fm=27&gp=0.jpg" alt="">
@@ -106,13 +85,15 @@
 
 <script>
 import TarbarHeader from '@/components/TarbarHeader'
-import Lbt from '@/components/Lbt'
+import Login from '@/components/Login'
+import LbtUI from '@/components/LbtUI'
 import Many from '@/components/Many'
 import TelephoneBill from '@/components/TelephoneBill'
 export default {
   components: {
     TarbarHeader,
-    Lbt,
+    Login,
+    LbtUI,
     Many,
     TelephoneBill
   }
@@ -120,61 +101,28 @@ export default {
 </script>
 
 <style scoped>
-.login{
-  width: 100%;
-  height: 9rem;
-  text-align: center;
-  background: skyblue;
-  padding-top: 1rem;
-}
-.login>span{
-  font-size: 5rem;
-  color: white;
-}
-.login>p{
-  font-size: 1.5rem;
-  color: white;
-}
-.main>ul:first-of-type {
-  width: 100%;
-  height: 9rem;
-  padding-top: 2rem;
-  background: skyblue;
-}
-.main>ul:first-of-type li{
-  width: 25%;
-  height: 100%;
-  text-align: center;
-  float: left;
-  font-size: 1.5rem;
-  color: white;
-}
-.main>ul:first-of-type li span{
-  font-size: 3.5rem;
-  color: white;
-}
 .homeOne{
-  padding: 1rem 0.3rem;
+  padding: 0.3rem 0.3rem;
   background: white;
 }
 .homeOne>ul{
   width: 100%;
-  height: 6rem;
+  height: 5rem;
   margin: 1.2rem 0;
 }
 .homeOne>ul li{
   width: 25%;
   float: left;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   /* border: solid 1px; */
   text-align: center;
 }
 .homeOne>ul li span{
-  font-size: 3.5rem;
+  font-size: 3.2rem;
   color: skyblue;
 }
 .homeOne>ul li div{
-  font-size: 4rem;
+  font-size: 3rem;
   color: gray;
   margin-top: 0.5rem;
 }
@@ -201,34 +149,6 @@ export default {
   outline: none;
   border: none;
   font-size: 1.4rem;
-}
-.menuCard{
-  height: 10rem;
-  widows: 100%;
-  padding-top: 1rem;
-}
-.menuCard img{
-  width: 40%;
-  height: 8rem;
-  line-height: 10rem;
-  float: left;
-  margin: 0 1rem;
-  padding-left: 1rem;
-}
-.menuCard h3{
-  font-size: 1.5rem;
-}
-.menuCard p{
-  font-size: 1.4rem;
-}
-.menuCard span{
-  display: inline-block;
-  font-size: 1.4rem;
-  border: solid 1px skyblue;
-  border-radius: 2rem;
-  color: skyblue;
-  padding: 0.2rem 0.5rem;
-  margin: 0.6rem;
 }
 </style>
 

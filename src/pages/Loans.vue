@@ -2,16 +2,18 @@
   <div id="loans">
     <tarbar-header seach='false' headerTitle='贷款'></tarbar-header>
     <div class="main">
-      <h1>我是loans</h1>
+      <login loginContent=登录可查询贷款></login>
     </div>
   </div>
 </template>
 
 <script>
 import TarbarHeader from '@/components/TarbarHeader'
+import Login from '@/components/Login'
 export default {
   components: {
-    TarbarHeader
+    TarbarHeader,
+    Login
   }
 }
 </script>

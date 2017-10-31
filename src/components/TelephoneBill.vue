@@ -44,23 +44,27 @@ export default {
     margin-bottom: 0.6rem;
 }
 .phoneTop b{
+    width: 30%;
     font-weight: normal;
     padding: 1rem;
 }
 .phoneTop input{
-    width: 18rem;
+    width: 60%;
     height: 3.2rem;
     font-size: 1.4rem;
     outline: none;
     border: none;
 }
 .phoneTop span{
+    width: 10%;
     font-size: 2.6rem;
     color: skyblue;
 }
 .menuPhone ul li{
     display: inline-block;
-    margin: 1rem 1rem;
+    width: 20%;
+    margin: 2% 1.8%;
+    /* margin: 1rem 1rem; */
     padding: 0.2rem 0.6rem;
     border: solid 1px skyblue;
     color: skyblue;

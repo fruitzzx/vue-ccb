@@ -56,4 +56,32 @@ img{
   position: relative;
   top: 66px;
 }
+.menuCard{
+  height: 10rem;
+  width: 100%;
+  padding-top: 1rem;
+}
+.menuCard img{
+  width: 40%;
+  /* height: 8rem; */
+  line-height: 10rem;
+  float: left;
+  margin: 0 1rem;
+  padding-left: 1rem;
+}
+.menuCard h3{
+  font-size: 1.5rem;
+}
+.menuCard p{
+  font-size: 1.4rem;
+}
+.menuCard span{
+  display: inline-block;
+  font-size: 1.4rem;
+  border: solid 1px skyblue;
+  border-radius: 2rem;
+  color: skyblue;
+  padding: 0.2rem 0.5rem;
+  margin: 0.6rem;
+}
 </style>

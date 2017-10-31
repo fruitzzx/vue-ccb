@@ -5,7 +5,7 @@ import Card from '@/pages/Card'
 import Invest from '@/pages/Invest'
 import Loans from '@/pages/Loans'
 import Life from '@/pages/Life'
-import TelephoneBill from '@/components/TelephoneBill'
+import LbtUI from '@/components/Many'
 
 Vue.use(Router)
 
@@ -36,10 +36,11 @@ export default new Router({
       name: 'life',
       component: Life
     },
+    // 测试。。。。。。。。。。
     {
       path: '/many',
       name: 'many',
-      component: TelephoneBill
+      component: LbtUI
     }
   ]
 })

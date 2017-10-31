@@ -3,6 +3,7 @@
     <div class="menuHeader">
         <span></span>
         <p>{{menuHeaderName}}</p>
+        <p><span>{{menuMore}}</span></p>
     </div>
     <slot></slot>
   </div>
@@ -10,7 +11,7 @@
 
 <script>
 export default {
-  props: ['menuHeaderName']
+  props: ['menuHeaderName', 'menuMore']
 }
 </script>
 
@@ -26,15 +27,23 @@ export default {
     border-bottom: solid 1px gray;
     padding: 0.5rem 0;
 }
-.menuHeader span{
+.menuHeader>span{
     display: block;
     width: 0.5rem;
     height: 100%;
     background: skyblue;
     float: left;
+    border-radius: 0 1rem 1rem 0;
 }
-.menuHeader p{
-    font-size: 1.8rem;
+.menuHeader>p{
+    font-size: 1.6rem;
     padding-left: 2rem;
+    color: skyblue;
+}
+.menuHeader>p>span{
+    float: right;
+    padding-right: 1rem;
+    font-size: 1.4rem;
+    margin-top: -3rem;
 }
 </style>

@@ -2,21 +2,342 @@
   <div id="card">
     <tarbar-header seach='false' headerTitle='信用卡'></tarbar-header>
     <div class="main">
-      <h1>我是card</h1>
+      <div class="cardHeader">
+        <span class="iconfont icon-suo"></span><br>
+        <p>请登录查看您的信用卡账单和卡片信息</p>
+      </div>
+      <div class="cardOne">
+        <ul>
+          <li>
+            <span class="iconfont icon-huankuan"></span><br>
+            为本人还款
+          </li>
+          <li>
+            <span class="iconfont icon-fenqifu"></span><br>
+            账单分期
+          </li>
+          <li>
+            <span class="iconfont icon-fenqigou"></span><br>
+            现金分期
+          </li>
+          <li>
+            <span class="iconfont icon-fenqi"></span><br>
+            为他人还款
+          </li>
+        </ul>
+        <hr>
+        <ul>
+          <li>
+            <span class="iconfont icon-zhuanchu-copy"></span><br>
+            建行还他行
+          </li>
+          <li>
+            <span class="iconfont icon-zhuanru"></span><br>
+            他行还建行
+          </li>
+          <li>
+            <span class="iconfont icon-zhuanchu"></span><br>
+            现金转出
+          </li>
+        </ul>
+      </div>
+      <lbt-u-i img1="https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=3184141841,117106269&fm=27&gp=0.jpg" img2="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=2017023583,3353199622&fm=27&gp=0.jpg" img3="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=577381051,417275712&fm=27&gp=0.jpg"></lbt-u-i>
+      <many menuHeaderName=信用卡管理>
+        <div class="menuDB">
+          <mt-swipe :auto="0">
+            <mt-swipe-item>
+              <ul>
+                <li>
+                  <span class="iconfont icon-huankuan"></span><br>
+                  为本人还款
+                </li>
+                <li>
+                  <span class="iconfont icon-fenqifu"></span><br>
+                  账单分期
+                </li>
+                <li>
+                  <span class="iconfont icon-fenqigou"></span><br>
+                  现金分期
+                </li>
+                <li>
+                  <span class="iconfont icon-fenqi"></span><br>
+                  为他人还款
+                </li>
+              </ul>
+              <!-- <hr> -->
+              <ul>
+                <li>
+                  <span class="iconfont icon-huankuan"></span><br>
+                  为本人还款
+                </li>
+                <li>
+                  <span class="iconfont icon-fenqifu"></span><br>
+                  账单分期
+                </li>
+                <li>
+                  <span class="iconfont icon-fenqigou"></span><br>
+                  现金分期
+                </li>
+                <li>
+                  <span class="iconfont icon-fenqi"></span><br>
+                  为他人还款
+                </li>
+              </ul>
+            </mt-swipe-item>
+            <mt-swipe-item>
+              <ul>
+                <li>
+                  <span class="iconfont icon-huankuan"></span><br>
+                  为本人还款
+                </li>
+                <li>
+                  <span class="iconfont icon-fenqifu"></span><br>
+                  账单分期
+                </li>
+                <li>
+                  <span class="iconfont icon-fenqigou"></span><br>
+                  现金分期
+                </li>
+                <li>
+                  <span class="iconfont icon-fenqi"></span><br>
+                  为他人还款
+                </li>
+              </ul>
+              <!-- <hr> -->
+              <ul>
+                <li>
+                  <span class="iconfont icon-huankuan"></span><br>
+                  为本人还款
+                </li>
+                <li>
+                  <span class="iconfont icon-fenqifu"></span><br>
+                  账单分期
+                </li>
+                <li>
+                  <span class="iconfont icon-fenqigou"></span><br>
+                  现金分期
+                </li>
+              </ul>
+            </mt-swipe-item>
+          </mt-swipe>
+        </div>
+      </many>
+      <many menuHeaderName=卡片推荐 menuMore=更多卡片&gt;>
+        <table>
+          <tr>
+            <td class="hui">
+              <div class="menuCard">
+                <img src="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=1669567030,3133239781&fm=27&gp=0.jpg" alt="">
+                <h3>LINEFRIENDS卡</h3>
+                <p>超萌粉丝卡片</p>
+                <p>粉丝专属礼遇</p>
+              </div>
+            </td>
+            <td>
+              <div class="menuCard">
+                <img src="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=1669567030,3133239781&fm=27&gp=0.jpg" alt="">
+                <h3>LINEFRIENDS卡</h3>
+                <p>超萌粉丝卡片</p>
+                <p>粉丝专属礼遇</p>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class="menuCard">
+                <img src="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=1669567030,3133239781&fm=27&gp=0.jpg" alt="">
+                <h3>LINEFRIENDS卡</h3>
+                <p>超萌粉丝卡片</p>
+                <p>粉丝专属礼遇</p>
+              </div>
+            </td>
+            <td class="hui">
+              <div class="menuCard">
+                <img src="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=1669567030,3133239781&fm=27&gp=0.jpg" alt="">
+                <h3>LINEFRIENDS卡</h3>
+                <p>超萌粉丝卡片</p>
+                <p>粉丝专属礼遇</p>
+              </div>
+            </td>
+          </tr>
+        </table>
+      </many>
+      <many menuHeaderName=热门商户 menuMore=周边商户&gt;>
+        <table>
+          <tr class="menuDBImg">
+            <td>
+              <img src="https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=319457397,2281895408&fm=27&gp=0.jpg" alt="">
+              <p>大家好我是李易峰</p>
+            </td>
+            <td>
+              <img src="https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=319457397,2281895408&fm=27&gp=0.jpg" alt="">
+              <p>大家好我是李易峰</p>
+            </td>
+          </tr>
+        </table>
+      </many>
+      <many menuHeaderName=分期乐 menuMore=更多分期&gt;>
+        <table>
+          <tr class="menuDBImg">
+            <td>
+              <img src="https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=3516607691,4180245740&fm=27&gp=0.jpg" alt="">
+              <p>大家好我是李易峰</p>
+            </td>
+            <td>
+              <img src="https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=3516607691,4180245740&fm=27&gp=0.jpg" alt="">
+              <p>大家好我是李易峰</p>
+            </td>
+          </tr>
+        </table>
+      </many>
+      <many menuHeaderName=热门活动 menuMore=更多活动&gt;>
+        <table>
+          <tr>
+            <td>
+              <div class="menuCard">
+                <img src="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=1669567030,3133239781&fm=27&gp=0.jpg" alt="">
+                <h3>LINEFRIENDS卡</h3>
+                <p>超萌粉丝卡片</p>
+                <p>粉丝专属礼遇</p>
+              </div>
+            </td>
+            <td class="hui">
+              <div class="menuCard">
+                <img src="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=1669567030,3133239781&fm=27&gp=0.jpg" alt="">
+                <h3>LINEFRIENDS卡</h3>
+                <p>超萌粉丝卡片</p>
+                <p>粉丝专属礼遇</p>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td class="hui">
+              <div class="menuCard">
+                <img src="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=1669567030,3133239781&fm=27&gp=0.jpg" alt="">
+                <h3>LINEFRIENDS卡</h3>
+                <p>超萌粉丝卡片</p>
+                <p>粉丝专属礼遇</p>
+              </div>
+            </td>
+            <td>
+              <div class="menuCard">
+                <img src="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=1669567030,3133239781&fm=27&gp=0.jpg" alt="">
+                <h3>LINEFRIENDS卡</h3>
+                <p>超萌粉丝卡片</p>
+                <p>粉丝专属礼遇</p>
+              </div>
+            </td>
+          </tr>
+        </table>
+      </many>
+      <br>
+      <br>
+      <br>
+      <br>
     </div>
   </div>
 </template>
 
 <script>
 import TarbarHeader from '@/components/TarbarHeader'
+import LbtUI from '@/components/LbtUI'
+import Many from '@/components/Many'
 export default {
   components: {
-    TarbarHeader
+    TarbarHeader,
+    LbtUI,
+    Many
   }
 }
 </script>
 
 <style scoped>
-
+.cardHeader{
+  width: 100%;
+  height: 16rem;
+  text-align: center;
+  background: skyblue;
+  padding-top: 1rem;
+}
+.cardHeader>span{
+  font-size: 8rem;
+  color: white;
+}
+.cardHeader>p{
+  padding-top: 1.2rem;
+  font-size: 1.2rem;
+  color: white;
+}
+.cardOne{
+  padding: 0.3rem 0.3rem;
+  background: white;
+}
+.cardOne>ul{
+  width: 100%;
+  height: 5rem;
+  margin: 1.5rem 0;
+}
+.cardOne>ul li, .menuDB ul li{
+  width: 25%;
+  float: left;
+  font-size: 1.2rem;
+  text-align: center;
+  margin: 0.5rem 0;
+}
+.cardOne>ul li span, .menuDB ul li span{
+  font-size: 3.2rem;
+  color: skyblue;
+}
+.menuDB{
+  width: 100%;
+  height: 12rem;
+}
+table{
+  width: 100%;
+  height: 14rem;
+}
+table tr{
+  width: 100%;
+  height: 7rem;
+}
+table tr td{
+  width: 50%;
+  /* border: solid; */
+}
+.menuCard{
+  height: 7rem;
+}
+.menuCard img{
+  width: 35%;
+  height: 5rem;
+  line-height: 5rem;
+  float: left;
+  margin: 0 1rem;
+  padding: 0;
+}
+.menuCard h3{
+  font-size: 1.1rem;
+  font-weight: normal;
+}
+.menuCard p{
+  font-size: 1rem;
+}
+.hui{
+  background: #dbdbdb;
+}
+.menuDBImg{
+  height: 8rem;
+  /* padding-left: 3rem; */
+}
+.menuDBImg img{
+  width: 95%;
+  height: 7rem;
+  padding: 0 2%;
+}
+.menuDBImg p{
+  width: 100%;
+  /* text-align: center; */
+  font-size: 1.2rem;
+}
 </style>
 
