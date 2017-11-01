@@ -57,7 +57,7 @@ export default {
 }
 .phoneTop span{
     width: 10%;
-    font-size: 2.6rem;
+    font-size: 2.2rem;
     color: skyblue;
 }
 .menuPhone ul li{

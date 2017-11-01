@@ -117,7 +117,7 @@ export default {
   text-align: center;
 }
 .homeOne>ul li span{
-  font-size: 3.2rem;
+  font-size: 2.8rem;
   color: skyblue;
 }
 .homeOne>ul li div{

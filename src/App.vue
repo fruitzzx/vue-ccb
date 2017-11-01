@@ -88,13 +88,13 @@ img{
   margin: 0.6rem;
 }
 .cardOne{
-  padding: 0.3rem 0.3rem;
+  padding: 0.3rem 0.8rem;
   background: white;
 }
 .cardOne>ul{
   width: 100%;
-  height: 6.1rem;
-  margin: 1.5rem 0;
+  height: 6.3rem;
+  margin: 0.5rem 0;
 }
 .cardOne>ul li, .menuDB ul li{
   width: 25%;
@@ -104,7 +104,10 @@ img{
   margin: 0.5rem 0;
 }
 .cardOne>ul li span, .menuDB ul li span{
-  font-size: 3.2rem;
+  font-size: 2.8rem;
   color: skyblue;
+}
+hr{
+  opacity: 0.2;
 }
 </style>

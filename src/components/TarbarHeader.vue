@@ -47,7 +47,7 @@ export default {
     width: 60%;
 }
 #header ul li span{
-    font-size: 3rem;
+    font-size: 2.5rem;
     /* text-align: center; */
     color: white;
 }

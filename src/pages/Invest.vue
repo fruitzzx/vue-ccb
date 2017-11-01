@@ -223,7 +223,7 @@ export default {
   width: 100%;
 }
 .investList li{
-  border-bottom: solid 1px gray;
+  border-bottom: solid 1px #cccccc;
 }
 .investList li:last-of-type{
   border: 0;

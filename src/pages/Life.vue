@@ -97,7 +97,7 @@ export default {
 }
 .investTop ul{
   width: 100%;
-  height: 11rem;
+  height: 8.5rem;
   padding-top: 2rem;
 }
 .investTop ul li{
@@ -107,7 +107,7 @@ export default {
   color: white;
 }
 .investTop ul li span{
-  font-size: 4rem;
+  font-size: 2.8rem;
 }
 .investTop ul li p{
   font-size: 1.4rem;
@@ -115,14 +115,14 @@ export default {
 }
 .posit{
   width: 100%;
-  height: 5rem;
+  height: 4rem;
   /* text-align: center; */
   background: white;
-  padding: 2rem 5% 0.2rem 5%;
+  padding: 1.5rem 5% 0.2rem 5%;
   color: skyblue;
 }
 .posit span{
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 .posit p{
   display: inline-block;
@@ -130,7 +130,7 @@ export default {
 }
 .bord{
   width: 100%;
-  height: 6px;
+  height: 4px;
   background: skyblue;
   border-radius: 10px 10px 0 0;
 }
