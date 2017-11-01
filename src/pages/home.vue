@@ -52,15 +52,18 @@
             <table>
               <tr>
                 <td>收款户名</td>
-                <td><input type="text" placeholder="请输入收款户名"></td>
+                <td><input type="text" placeholder="请输入收款户名" v-model="transferName"></td>
               </tr>
               <tr>
                 <td>收款账号</td>
-                <td><input type="text" placeholder="请输入收款账号或手机号"></td>
+                <td><input type="text" placeholder="请输入收款账号或手机号" v-model="transferNum"></td>
               </tr>
               <tr>
                 <td>转账金额</td>
-                <td><input type="text" placeholder="前请输入转账金额"></td>
+                <td class="zz">
+                  <input type="text" placeholder="前请输入转账金额" v-model="transferMoney">
+                  <button :disabled="!bol">转账</button>
+                </td>
               </tr>
             </table>
         </div>
@@ -89,6 +92,14 @@ import LbtUI from '@/components/LbtUI'
 import Many from '@/components/Many'
 import TelephoneBill from '@/components/TelephoneBill'
 export default {
+  data () {
+    return {
+      transferName: '',
+      transferNum: '',
+      transferMoney: '',
+      bol: true
+    }
+  },
   components: {
     TarbarHeader,
     Login,
@@ -143,11 +154,24 @@ export default {
   padding-left: 1rem;
 }
 .menuTable table tr td input{
-  width: 100%;
+  width: 70%;
   height: 3rem;
   outline: none;
   border: none;
   font-size: 1.4rem;
+}
+.zz button{
+  display: inline-block;
+  width: 28%;
+  height: 2.8rem;
+  line-height: 2.8rem;
+  text-align: center;
+  border: solid 1px skyblue;
+  border-radius: 2rem;
+  color: skyblue;
+  float: right;
+  background: white;
+  outline: none;
 }
 </style>
 

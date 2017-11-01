@@ -1,59 +1,39 @@
 <template>
   <div id="lbt">
-    <ul>
-        <li>
+    <mt-swipe :auto="4000">
+        <mt-swipe-item>
             <img :src=img1 alt="">
-        </li>
-        <li>
+        </mt-swipe-item>
+        <mt-swipe-item>
             <img :src=img2 alt="">
-        </li>
-        <li>
+        </mt-swipe-item>
+        <mt-swipe-item>
             <img :src=img3 alt="">
-        </li>
-    </ul>
+        </mt-swipe-item>
+        <mt-swipe-item>
+            <img :src=img4 alt="">
+        </mt-swipe-item>
+    </mt-swipe>
   </div>
 </template>
 
 <script>
 export default {
-  props: ['img1', 'img2', 'img3']
+  props: ['img1', 'img2', 'img3', 'img4']
 }
 </script>
+
 
 <style scoped>
 #lbt{
     width: 100%;
-    height: 10rem;
+    height: 16rem;
+    text-align: center;
     background: skyblue;
-    overflow: hidden;
-    position: relative;
-    margin: 1rem 0;
+    padding-top: 1rem;
 }
-#lbt ul{
-    width: 300%;
-    height: 10rem;
-    position: absolute;
-    left: 0;
-    animation: leftAnimation 6s infinite;
-}
-#lbt ul li img{
-    width: 33.33333%;
-    height: 10rem;
-    float: left;
-}
-@keyframes leftAnimation{
-    30%{
-        left: 0%;
-    }
-    60%{
-        left: -100%;
-    }
-    90%{
-        left: -200%;
-    }
-    100%{
-        left: 0;
-    }
+img{
+    width: 100%;
+    height: 16rem;
 }
 </style>
-

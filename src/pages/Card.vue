@@ -2,10 +2,12 @@
   <div id="card">
     <tarbar-header seach='false' headerTitle='信用卡'></tarbar-header>
     <div class="main">
-      <div class="cardHeader">
+      <!-- ............................ -->
+      <div v-show="!loginBol" class="cardHeader">
         <span class="iconfont icon-suo"></span><br>
         <p>请登录查看您的信用卡账单和卡片信息</p>
       </div>
+      <lbt v-show="loginBol" img1="https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=4157308415,301584995&fm=27&gp=0.jpg" img2="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=1424871196,3018315589&fm=27&gp=0.jpg" img3="https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=2557745501,283041677&fm=27&gp=0.jpg" img4="https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=306688599,1647376835&fm=27&gp=0.jpg"></lbt>
       <div class="cardOne">
         <ul>
           <li>
@@ -239,11 +241,18 @@
 
 <script>
 import TarbarHeader from '@/components/TarbarHeader'
+import Lbt from '@/components/Lbt'
 import LbtUI from '@/components/LbtUI'
 import Many from '@/components/Many'
 export default {
+  data () {
+    return {
+      loginBol: this.$store.state.loginBol
+    }
+  },
   components: {
     TarbarHeader,
+    Lbt,
     LbtUI,
     Many
   }

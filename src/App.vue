@@ -3,7 +3,7 @@
     <div id="content">
       <router-view/>
     </div>
-    <tarbar></tarbar>
+    <tarbar v-show="tabBarShow"></tarbar>
   </div>
 </template>
 
@@ -11,9 +11,13 @@
 import '@/common/reset.js'
 import Tarbar from '@/components/Tarbar'
 export default {
-  name: 'app',
   components: {
     Tarbar
+  },
+  computed: {
+    tabBarShow () {
+      return this.$store.state.tabBarShow
+    }
   }
 }
 </script>
@@ -44,10 +48,10 @@ img{
 }
 #content{
   width: 100%;
-  position: relative;
-  /* top: 66px; */
+  position: absolute;
   top: 0;
-  bottom: 50px;
+  /* bottom: 50px; */
+  bottom: 0;
   left: 0;
   right: 0;
   overflow: auto;
