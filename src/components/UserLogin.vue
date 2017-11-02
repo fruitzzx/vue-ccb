@@ -37,32 +37,41 @@ export default {
       this.$msg('', '如果忘记手机银行登录密码，请持本人有效身份证件及注册手机银行的账户，前往建行任意网点办理密码重置。')
     },
     loginBtn () {
-      let url = 'http://10.3.151.203:8081/users?userId=' + this.loginNum
-      return this.$http.get(url)
-        .then(res => {
-            // 如果数据库中已存在该用户的信息则返回数据库里的信息
-          this.$store.state.time = new Date().toLocaleString()
-          if (res.data.length > 0) {
-            let userObj = res.data[0]
-            this.$store.dispatch('userLogin', userObj)
-            this.$store.state.loginBol = true
-            this.$router.push('/home')
-          } else {
-            //   如果数据库中不存在该用户的信息则给数据库添加用户信息
-            this.$msg.prompt('第一次登录需提交您的姓名进行实名认证，请输入姓名').then(({ value, action }) => {
-              let userObj = {
-                userName: value,
-                userId: this.loginNum,
-                userPwd: this.loginPwd,
-                balanceMoney: parseInt(Math.random() * 10000).toFixed(2)
+      if (this.loginNum !== '' && this.loginPwd !== '') {
+        let url = 'http://10.3.151.203:8081/users?userId=' + this.loginNum
+        return this.$http.get(url)
+          .then(res => {
+            // 如果数据库中已存在该用户的信息，则返回数据库里的信息
+            this.$store.state.time = new Date().toLocaleString()
+            if (res.data.length > 0) {
+              let userObj = res.data[0]
+              if (this.loginPwd === userObj.userPwd) {
+                this.$store.dispatch('userLogin', userObj)
+                this.$store.state.loginBol = true
+                this.$router.push('/home')
+              } else {
+                this.$msg('提示', '密码错误')
               }
-              this.$http.post(url, userObj)
-              this.$store.dispatch('userLogin', userObj)
-              this.$store.state.loginBol = true
-              this.$router.push('/home')
-            })
-          }
-        })
+            } else {
+              //   如果数据库中不存在该用户的信息，则给数据库添加用户信息
+              this.$msg.prompt('第一次登录需提交您的姓名进行实名认证，请输入姓名').then(({ value, action }) => {
+                let userObj = {
+                  userName: value,
+                  userId: this.loginNum,
+                  userPwd: this.loginPwd,
+                  balanceMoney: (parseInt(Math.random() * 1000000) / 100).toFixed(2),
+                  userHistory: []
+                }
+                this.$http.post(url, userObj)
+                this.$store.dispatch('userLogin', userObj)
+                this.$store.state.loginBol = true
+                this.$router.push('/home')
+              })
+            }
+          })
+      } else {
+        this.$msg('提示', '号码和密码都不能为空')
+      }
     }
   },
   computed: {

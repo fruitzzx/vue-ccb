@@ -1,39 +1,92 @@
 {
   "users": [
     {
-      "userName": "陈凤厦",
-      "userId": "13622425331",
+      "userName": "许柠",
+      "userId": "123456",
       "userPwd": "123456",
-      "balanceMoney": "8825.00",
+      "balanceMoney": "6942.03",
+      "userHistory": [
+        {
+          "text": "给张三(111)转账",
+          "to": "-100",
+          "time": "2017/11/2 下午4:38:55",
+          "otherMoney": "余额: 7742.03"
+        },
+        {
+          "text": "给张三(111)转账",
+          "to": "-100",
+          "time": "2017/11/2 下午4:38:59",
+          "otherMoney": "余额: 7642.03"
+        },
+        {
+          "text": "给张三(111)转账",
+          "to": "-100",
+          "time": "2017/11/2 下午4:39:00",
+          "otherMoney": "余额: 7542.03"
+        },
+        {
+          "text": "给张三(111)转账",
+          "to": "-100",
+          "time": "2017/11/2 下午4:39:02",
+          "otherMoney": "余额: 7442.03"
+        },
+        {
+          "text": "给123456充值话费",
+          "to": "-100",
+          "time": "2017/11/2 下午4:39:20",
+          "otherMoney": "余额: 7342.03"
+        },
+        {
+          "text": "给123456充值话费",
+          "to": "-300",
+          "time": "2017/11/2 下午4:39:22",
+          "otherMoney": "余额: 7042.03"
+        },
+        {
+          "text": "给121212充值话费",
+          "to": "-100",
+          "time": "2017/11/2 下午4:39:50",
+          "otherMoney": "余额: 6942.03"
+        }
+      ],
       "id": 1
     },
     {
-      "userName": "许柠",
-      "userId": "13622425332",
-      "userPwd": "123456",
-      "balanceMoney": "3059.00",
+      "userName": "张三",
+      "userId": "111",
+      "userPwd": "111",
+      "balanceMoney": "7623.45",
+      "userHistory": [
+        {
+          "text": "给123充值话费",
+          "to": "-100",
+          "time": "2017/11/2 下午4:56:57",
+          "otherMoney": "余额: 7923.45"
+        },
+        {
+          "text": "给123456556666充值话费",
+          "to": "-300",
+          "time": "2017/11/2 下午5:07:38",
+          "otherMoney": "余额: 7623.45"
+        }
+      ],
       "id": 2
     },
     {
-      "userName": "哈哈哈",
-      "userId": "123",
-      "userPwd": "123",
-      "balanceMoney": "2994.00",
+      "userName": "李四",
+      "userId": "222",
+      "userPwd": "222",
+      "balanceMoney": "8424.40",
+      "userHistory": [],
       "id": 3
     },
     {
-      "userName": "11111",
-      "userId": "1111",
-      "userPwd": "1111",
-      "balanceMoney": "1331.00",
+      "userName": "123",
+      "userId": "123",
+      "userPwd": "123",
+      "balanceMoney": "4795.10",
+      "userHistory": [],
       "id": 4
-    },
-    {
-      "userName": "123456",
-      "userId": "123456",
-      "userPwd": "123456",
-      "balanceMoney": "8763.00",
-      "id": 5
     }
   ]
 }

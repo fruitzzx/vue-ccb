@@ -62,7 +62,7 @@
                 <td>转账金额</td>
                 <td class="zz">
                   <input type="text" placeholder="前请输入转账金额" v-model="transferMoney">
-                  <button :disabled="!bol">转账</button>
+                  <button :disabled="transferBol" @click="transfer">转账</button>
                 </td>
               </tr>
             </table>
@@ -97,7 +97,63 @@ export default {
       transferName: '',
       transferNum: '',
       transferMoney: '',
-      bol: true
+      loginBol: this.$store.state.loginBol
+    }
+  },
+  computed: {
+    userInfo () {
+      return this.$store.state.userInfo
+    },
+    transferBol () {
+      if (this.transferName !== '' && this.transferNum !== '' && this.transferMoney !== '') {
+        return false
+      } else {
+        return true
+      }
+    }
+  },
+  methods: {
+    // 转账
+    transfer () {
+      if (this.loginBol) {
+        let url = 'http://10.3.151.203:8081/users?userName=' + this.transferName + '&userId=' + this.transferNum
+        this.$http.get(url)
+          .then(res => {
+            if (res.data.length > 0) {
+              this.$msg.confirm('此操作无法撤销，确定执行?')
+                .then(action => {
+                  let loginUrl = `http://10.3.151.203:8081/users/${this.userInfo.id}`
+                  let passivityUrl = `http://10.3.151.203:8081/users/${res.data[0].id}`
+                  // 转账人
+                  this.$http.get(loginUrl)
+                    .then(res => {
+                      res.data.balanceMoney = (parseFloat(res.data.balanceMoney) - parseFloat(this.transferMoney)).toFixed(2)
+                      let obj = {
+                        text: `给${this.transferName}(${this.transferNum})转账`,
+                        to: `-${this.transferMoney}`,
+                        time: new Date().toLocaleString(),
+                        otherMoney: `余额: ${this.userInfo.balanceMoney - this.transferMoney}`
+                      }
+                      res.data.userHistory.push(obj)
+                      this.$http.put(loginUrl, res.data)
+                      // 同事更改userInfo的数据
+                      this.$store.dispatch('userLogin', res.data)
+                    })
+                    // 被转账人
+                  this.$http.get(passivityUrl)
+                    .then(res => {
+                      res.data.balanceMoney = (parseFloat(res.data.balanceMoney) + parseFloat(this.transferMoney)).toFixed(2)
+                      this.$http.put(passivityUrl, res.data)
+                    })
+                  this.$msg('提示', '转账成功')
+                })
+            } else {
+              this.$msg('提示', '您输入的用户不存在')
+            }
+          })
+      } else {
+        this.$router.push('/userlogin')
+      }
     }
   },
   components: {
@@ -171,7 +227,7 @@ export default {
   color: skyblue;
   float: right;
   background: white;
-  outline: none;
+  /* outline: none; */
 }
 </style>
 
