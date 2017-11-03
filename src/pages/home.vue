@@ -132,17 +132,24 @@ export default {
                         text: `给${this.transferName}(${this.transferNum})转账`,
                         to: `-${this.transferMoney}`,
                         time: new Date().toLocaleString(),
-                        otherMoney: `余额: ${this.userInfo.balanceMoney - this.transferMoney}`
+                        otherMoney: `余额: ${res.data.balanceMoney}`
                       }
                       res.data.userHistory.push(obj)
                       this.$http.put(loginUrl, res.data)
-                      // 同事更改userInfo的数据
+                      // 同时更改userInfo的数据
                       this.$store.dispatch('userLogin', res.data)
                     })
                     // 被转账人
                   this.$http.get(passivityUrl)
                     .then(res => {
                       res.data.balanceMoney = (parseFloat(res.data.balanceMoney) + parseFloat(this.transferMoney)).toFixed(2)
+                      let obj = {
+                        text: `${this.userInfo.userName}(${this.userInfo.userId})转账给你`,
+                        to: `+${this.transferMoney}`,
+                        time: new Date().toLocaleString(),
+                        otherMoney: `余额: ${res.data.balanceMoney}`
+                      }
+                      res.data.userHistory.push(obj)
                       this.$http.put(passivityUrl, res.data)
                     })
                   this.$msg('提示', '转账成功')
