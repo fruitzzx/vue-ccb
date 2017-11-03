@@ -11,6 +11,12 @@
 import '@/common/reset.js'
 import Tarbar from '@/components/Tarbar'
 export default {
+  created () {
+    this.$http.get('http://10.3.151.203:8081/img')
+      .then(res => {
+        this.$store.state.imgs = res.data
+      })
+  },
   components: {
     Tarbar
   },

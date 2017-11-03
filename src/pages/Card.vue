@@ -7,7 +7,7 @@
         <span class="iconfont icon-suo"></span><br>
         <p>请登录查看您的信用卡账单和卡片信息</p>
       </div>
-      <lbt v-show="loginBol" img1="https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=4157308415,301584995&fm=27&gp=0.jpg" img2="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=1424871196,3018315589&fm=27&gp=0.jpg" img3="https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=2557745501,283041677&fm=27&gp=0.jpg" img4="https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=306688599,1647376835&fm=27&gp=0.jpg"></lbt>
+      <lbt v-show="loginBol" :img1=imgs[11] :img2=imgs[22] :img3=imgs[28] :img4=imgs[5]></lbt>
       <div class="cardOne">
         <ul>
           <li>
@@ -43,7 +43,7 @@
           </li>
         </ul>
       </div>
-      <lbt-u-i img1="https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=3184141841,117106269&fm=27&gp=0.jpg" img2="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=2017023583,3353199622&fm=27&gp=0.jpg" img3="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=577381051,417275712&fm=27&gp=0.jpg"></lbt-u-i>
+      <lbt-u-i :img1=imgs[24] :img2=imgs[25] :img3=imgs[26]></lbt-u-i>
       <many menuHeaderName=信用卡管理>
         <div class="menuDB">
           <mt-swipe :auto="0">
@@ -129,7 +129,7 @@
           <tr>
             <td class="hui">
               <div class="menuCard">
-                <img src="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=1669567030,3133239781&fm=27&gp=0.jpg" alt="">
+                <img :src=imgs[5] alt="">
                 <h3>LINEFRIENDS卡</h3>
                 <p>超萌粉丝卡片</p>
                 <p>粉丝专属礼遇</p>
@@ -137,7 +137,7 @@
             </td>
             <td>
               <div class="menuCard">
-                <img src="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=1669567030,3133239781&fm=27&gp=0.jpg" alt="">
+                <img :src=imgs[6] alt="">
                 <h3>LINEFRIENDS卡</h3>
                 <p>超萌粉丝卡片</p>
                 <p>粉丝专属礼遇</p>
@@ -147,7 +147,7 @@
           <tr>
             <td>
               <div class="menuCard">
-                <img src="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=1669567030,3133239781&fm=27&gp=0.jpg" alt="">
+                <img :src=imgs[7] alt="">
                 <h3>LINEFRIENDS卡</h3>
                 <p>超萌粉丝卡片</p>
                 <p>粉丝专属礼遇</p>
@@ -155,7 +155,7 @@
             </td>
             <td class="hui">
               <div class="menuCard">
-                <img src="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=1669567030,3133239781&fm=27&gp=0.jpg" alt="">
+                <img :src=imgs[8] alt="">
                 <h3>LINEFRIENDS卡</h3>
                 <p>超萌粉丝卡片</p>
                 <p>粉丝专属礼遇</p>
@@ -168,11 +168,11 @@
         <table>
           <tr class="menuDBImg">
             <td>
-              <img src="https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=319457397,2281895408&fm=27&gp=0.jpg" alt="">
+              <img :src=imgs[9] alt="">
               <p>大家好我是李易峰</p>
             </td>
             <td>
-              <img src="https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=319457397,2281895408&fm=27&gp=0.jpg" alt="">
+              <img :src=imgs[10] alt="">
               <p>大家好我是李易峰</p>
             </td>
           </tr>
@@ -182,11 +182,11 @@
         <table>
           <tr class="menuDBImg">
             <td>
-              <img src="https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=3516607691,4180245740&fm=27&gp=0.jpg" alt="">
+              <img :src=imgs[11] alt="">
               <p>大家好我是李易峰</p>
             </td>
             <td>
-              <img src="https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=3516607691,4180245740&fm=27&gp=0.jpg" alt="">
+              <img :src=imgs[12] alt="">
               <p>大家好我是李易峰</p>
             </td>
           </tr>
@@ -197,7 +197,7 @@
           <tr>
             <td>
               <div class="menuCard">
-                <img src="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=1669567030,3133239781&fm=27&gp=0.jpg" alt="">
+                <img :src=imgs[13] alt="">
                 <h3>LINEFRIENDS卡</h3>
                 <p>超萌粉丝卡片</p>
                 <p>粉丝专属礼遇</p>
@@ -205,7 +205,7 @@
             </td>
             <td class="hui">
               <div class="menuCard">
-                <img src="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=1669567030,3133239781&fm=27&gp=0.jpg" alt="">
+                <img :src=imgs[14] alt="">
                 <h3>LINEFRIENDS卡</h3>
                 <p>超萌粉丝卡片</p>
                 <p>粉丝专属礼遇</p>
@@ -215,7 +215,7 @@
           <tr>
             <td class="hui">
               <div class="menuCard">
-                <img src="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=1669567030,3133239781&fm=27&gp=0.jpg" alt="">
+                <img :src=imgs[15] alt="">
                 <h3>LINEFRIENDS卡</h3>
                 <p>超萌粉丝卡片</p>
                 <p>粉丝专属礼遇</p>
@@ -223,7 +223,7 @@
             </td>
             <td>
               <div class="menuCard">
-                <img src="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=1669567030,3133239781&fm=27&gp=0.jpg" alt="">
+                <img :src=imgs[16] alt="">
                 <h3>LINEFRIENDS卡</h3>
                 <p>超萌粉丝卡片</p>
                 <p>粉丝专属礼遇</p>
@@ -248,6 +248,11 @@ export default {
   data () {
     return {
       loginBol: this.$store.state.loginBol
+    }
+  },
+  computed: {
+    imgs () {
+      return this.$store.state.imgs
     }
   },
   components: {

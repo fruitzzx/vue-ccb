@@ -41,10 +41,10 @@
           </li>
         </ul>
       </div>
-      <lbt-u-i img1="https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=3184141841,117106269&fm=27&gp=0.jpg" img2="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=2017023583,3353199622&fm=27&gp=0.jpg" img3="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=577381051,417275712&fm=27&gp=0.jpg"></lbt-u-i>
+      <lbt-u-i :img1=imgs[0] :img2=imgs[1] :img3=imgs[2]></lbt-u-i>
       <many menuHeaderName=龙支付>
         <div class="menuImg">
-            <img src="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=2887272181,2202751516&fm=27&gp=0.jpg" alt="">
+            <img :src=imgs[3] alt="">
         </div>
       </many>
       <many menuHeaderName=快速转账>
@@ -71,7 +71,7 @@
       <telephone-bill></telephone-bill>
       <many menuHeaderName=信用卡>
         <div class="menuCard">
-          <img src="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=1669567030,3133239781&fm=27&gp=0.jpg" alt="">
+          <img :src=imgs[4] alt="">
           <h3>LINEFRIENDS卡</h3>
           <p>超萌粉丝卡片</p>
           <p>粉丝专属礼遇</p>
@@ -110,6 +110,9 @@ export default {
       } else {
         return true
       }
+    },
+    imgs () {
+      return this.$store.state.imgs
     }
   },
   methods: {
@@ -235,6 +238,9 @@ export default {
   float: right;
   background: white;
   outline: none;
+}
+.menuCard img{
+  height: 6rem;
 }
 </style>
 

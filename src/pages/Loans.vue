@@ -21,8 +21,8 @@
       </div>
       <many menuHeaderName=精彩推荐>
         <div class="advertising">
-          <img src="https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=1291549759,450642421&fm=27&gp=0.jpg" alt="">
-          <img src="https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=1291549759,450642421&fm=27&gp=0.jpg" alt="">
+          <img :src=imgs[22] alt="">
+          <img :src=imgs[23] alt="">
         </div>
       </many>
       <br>
@@ -37,6 +37,11 @@ import TarbarHeader from '@/components/TarbarHeader'
 import Login from '@/components/Login'
 import Many from '@/components/Many'
 export default {
+  computed: {
+    imgs () {
+      return this.$store.state.imgs
+    }
+  },
   components: {
     TarbarHeader,
     Login,

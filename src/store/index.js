@@ -7,6 +7,7 @@ const state = {
   time: null,
   loginBol: false,
   spanBol: false,
+  imgs: [],
   // 用来存登录用户信息
   userInfo: {}
 }

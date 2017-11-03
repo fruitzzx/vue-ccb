@@ -62,7 +62,7 @@
           </li>
         </ul>
       </div>
-      <lbt-u-i img1="https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=306688599,1647376835&fm=27&gp=0.jpg" img2="https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=1371426078,2464579106&fm=27&gp=0.jpg" img3="https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=3905258331,3067550508&fm=27&gp=0.jpg"></lbt-u-i>
+      <lbt-u-i :img1=imgs[28] :img2=imgs[29] :img3=imgs[27]></lbt-u-i>
       <telephone-bill></telephone-bill>
       <many menuHeaderName=最近缴费 menuMore=更多&gt;>
         <div v-show="!showBol" class="moreEE">暂无历史缴费信息</div>
@@ -113,6 +113,9 @@ export default {
     },
     historyList () {
       return this.userInfo.userHistory
+    },
+    imgs () {
+      return this.$store.state.imgs
     }
   },
   components: {

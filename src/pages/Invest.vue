@@ -41,10 +41,10 @@
         </ul>
       </div>
       <div class="imgDB">
-        <img src="https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=2686718778,3823245170&fm=27&gp=0.jpg" alt="">
-        <img src="https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=2686718778,3823245170&fm=27&gp=0.jpg" alt="">
+        <img :src=imgs[20] alt="">
+        <img :src=imgs[21] alt="">
       </div>
-      <lbt-u-i img1="https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=4157308415,301584995&fm=27&gp=0.jpg" img2="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=1424871196,3018315589&fm=27&gp=0.jpg" img3="https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=2557745501,283041677&fm=27&gp=0.jpg"></lbt-u-i>
+      <lbt-u-i :img1=imgs[17] :img2=imgs[18] :img3=imgs[19]></lbt-u-i>
       <many menuHeaderName="最近热卖">
         <ul class="investList">
           <li>
@@ -193,6 +193,11 @@ import TarbarHeader from '@/components/TarbarHeader'
 import LbtUI from '@/components/LbtUI'
 import Many from '@/components/Many'
 export default {
+  computed: {
+    imgs () {
+      return this.$store.state.imgs
+    }
+  },
   components: {
     TarbarHeader,
     LbtUI,

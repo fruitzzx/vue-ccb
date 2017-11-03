@@ -2,7 +2,8 @@
 var Mock = require('mockjs')
 var fs = require('fs')
 var data = Mock.mock({
-  'users': []
+  'users': [],
+  'img|30': ['@img(375x150, @color, @ctitle)']
 })
 
 fs.writeFile('db.json', JSON.stringify(data, null, 2), function (err) {
