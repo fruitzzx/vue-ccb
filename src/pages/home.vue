@@ -234,7 +234,7 @@ export default {
   color: skyblue;
   float: right;
   background: white;
-  /* outline: none; */
+  outline: none;
 }
 </style>
 
