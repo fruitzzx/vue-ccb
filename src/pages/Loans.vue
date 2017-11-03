@@ -37,6 +37,13 @@ import TarbarHeader from '@/components/TarbarHeader'
 import Login from '@/components/Login'
 import Many from '@/components/Many'
 export default {
+  created () {
+    this.$store.state.homeActive = false
+    this.$store.state.cardActive = false
+    this.$store.state.investActive = false
+    this.$store.state.loansActive = true
+    this.$store.state.lifeActive = false
+  },
   computed: {
     imgs () {
       return this.$store.state.imgs

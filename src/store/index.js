@@ -8,6 +8,11 @@ const state = {
   loginBol: false,
   spanBol: false,
   imgs: [],
+  homeActive: true,
+  cardActive: false,
+  investActive: false,
+  loansActive: false,
+  lifeActive: false,
   // 用来存登录用户信息
   userInfo: {}
 }

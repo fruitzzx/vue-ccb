@@ -245,6 +245,13 @@ import Lbt from '@/components/Lbt'
 import LbtUI from '@/components/LbtUI'
 import Many from '@/components/Many'
 export default {
+  created () {
+    this.$store.state.homeActive = false
+    this.$store.state.cardActive = true
+    this.$store.state.investActive = false
+    this.$store.state.loansActive = false
+    this.$store.state.lifeActive = false
+  },
   data () {
     return {
       loginBol: this.$store.state.loginBol

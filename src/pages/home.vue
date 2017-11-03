@@ -92,6 +92,13 @@ import LbtUI from '@/components/LbtUI'
 import Many from '@/components/Many'
 import TelephoneBill from '@/components/TelephoneBill'
 export default {
+  created () {
+    this.$store.state.homeActive = true
+    this.$store.state.cardActive = false
+    this.$store.state.investActive = false
+    this.$store.state.loansActive = false
+    this.$store.state.lifeActive = false
+  },
   data () {
     return {
       transferName: '',

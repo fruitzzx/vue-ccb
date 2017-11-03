@@ -90,6 +90,13 @@ import LbtUI from '@/components/LbtUI'
 import TelephoneBill from '@/components/TelephoneBill'
 import Many from '@/components/Many'
 export default {
+  created () {
+    this.$store.state.homeActive = false
+    this.$store.state.cardActive = false
+    this.$store.state.investActive = false
+    this.$store.state.loansActive = false
+    this.$store.state.lifeActive = true
+  },
   data () {
     return {
       loginBol: this.$store.state.loginBol

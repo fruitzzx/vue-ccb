@@ -193,6 +193,13 @@ import TarbarHeader from '@/components/TarbarHeader'
 import LbtUI from '@/components/LbtUI'
 import Many from '@/components/Many'
 export default {
+  created () {
+    this.$store.state.homeActive = false
+    this.$store.state.cardActive = false
+    this.$store.state.investActive = true
+    this.$store.state.loansActive = false
+    this.$store.state.lifeActive = false
+  },
   computed: {
     imgs () {
       return this.$store.state.imgs
