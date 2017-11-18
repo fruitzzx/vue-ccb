@@ -38,7 +38,7 @@ export default {
     },
     loginBtn () {
       if (this.loginNum !== '' && this.loginPwd !== '') {
-        let url = 'http://10.3.151.203:8081/users?userId=' + this.loginNum
+        let url = 'http://10.3.158.97:8081/users?userId=' + this.loginNum
         return this.$http.get(url)
           .then(res => {
             // 如果数据库中已存在该用户的信息，则返回数据库里的信息

@@ -12,7 +12,7 @@ import '@/common/reset.js'
 import Tarbar from '@/components/Tarbar'
 export default {
   created () {
-    this.$http.get('http://10.3.151.203:8081/img')
+    this.$http.get('http://10.3.158.97:8081/img')
       .then(res => {
         this.$store.state.imgs = res.data
       })
@@ -47,6 +47,10 @@ img{
   display: inline-block;
   margin: 0;
   padding: 0;
+}
+img[lazy=loading] {
+  background: url(./common/img/loading.gif) no-repeat center center;
+  background-size: 100% 100%;
 }
 #app {
   width: 100%;

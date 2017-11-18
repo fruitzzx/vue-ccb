@@ -129,7 +129,7 @@
           <tr>
             <td class="hui">
               <div class="menuCard">
-                <img :src=imgs[5] alt="">
+                <img v-lazy=imgs[5] alt="">
                 <h3>LINEFRIENDS卡</h3>
                 <p>超萌粉丝卡片</p>
                 <p>粉丝专属礼遇</p>
@@ -137,7 +137,7 @@
             </td>
             <td>
               <div class="menuCard">
-                <img :src=imgs[6] alt="">
+                <img v-lazy=imgs[6] alt="">
                 <h3>LINEFRIENDS卡</h3>
                 <p>超萌粉丝卡片</p>
                 <p>粉丝专属礼遇</p>
@@ -147,7 +147,7 @@
           <tr>
             <td>
               <div class="menuCard">
-                <img :src=imgs[7] alt="">
+                <img v-lazy=imgs[7] alt="">
                 <h3>LINEFRIENDS卡</h3>
                 <p>超萌粉丝卡片</p>
                 <p>粉丝专属礼遇</p>
@@ -155,7 +155,7 @@
             </td>
             <td class="hui">
               <div class="menuCard">
-                <img :src=imgs[8] alt="">
+                <img v-lazy=imgs[8] alt="">
                 <h3>LINEFRIENDS卡</h3>
                 <p>超萌粉丝卡片</p>
                 <p>粉丝专属礼遇</p>
@@ -168,11 +168,11 @@
         <table>
           <tr class="menuDBImg">
             <td>
-              <img :src=imgs[9] alt="">
+              <img v-lazy=imgs[9] alt="">
               <p>大家好我是李易峰</p>
             </td>
             <td>
-              <img :src=imgs[10] alt="">
+              <img v-lazy=imgs[10] alt="">
               <p>大家好我是李易峰</p>
             </td>
           </tr>
@@ -182,11 +182,11 @@
         <table>
           <tr class="menuDBImg">
             <td>
-              <img :src=imgs[11] alt="">
+              <img v-lazy=imgs[11] alt="">
               <p>大家好我是李易峰</p>
             </td>
             <td>
-              <img :src=imgs[12] alt="">
+              <img v-lazy=imgs[12] alt="">
               <p>大家好我是李易峰</p>
             </td>
           </tr>
@@ -197,7 +197,7 @@
           <tr>
             <td>
               <div class="menuCard">
-                <img :src=imgs[13] alt="">
+                <img v-lazy=imgs[13] alt="">
                 <h3>LINEFRIENDS卡</h3>
                 <p>超萌粉丝卡片</p>
                 <p>粉丝专属礼遇</p>
@@ -205,7 +205,7 @@
             </td>
             <td class="hui">
               <div class="menuCard">
-                <img :src=imgs[14] alt="">
+                <img v-lazy=imgs[14] alt="">
                 <h3>LINEFRIENDS卡</h3>
                 <p>超萌粉丝卡片</p>
                 <p>粉丝专属礼遇</p>
@@ -215,7 +215,7 @@
           <tr>
             <td class="hui">
               <div class="menuCard">
-                <img :src=imgs[15] alt="">
+                <img v-lazy=imgs[15] alt="">
                 <h3>LINEFRIENDS卡</h3>
                 <p>超萌粉丝卡片</p>
                 <p>粉丝专属礼遇</p>
@@ -223,7 +223,7 @@
             </td>
             <td>
               <div class="menuCard">
-                <img :src=imgs[16] alt="">
+                <img v-lazy=imgs[16] alt="">
                 <h3>LINEFRIENDS卡</h3>
                 <p>超萌粉丝卡片</p>
                 <p>粉丝专属礼遇</p>

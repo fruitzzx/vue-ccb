@@ -2,13 +2,13 @@
   <div id="lbtUI">
     <mt-swipe :auto="4000">
         <mt-swipe-item>
-            <img :src=img1 alt="">
+            <img v-lazy=img1 alt="">
         </mt-swipe-item>
         <mt-swipe-item>
-            <img :src=img2 alt="">
+            <img v-lazy=img2 alt="">
         </mt-swipe-item>
         <mt-swipe-item>
-            <img :src=img3 alt="">
+            <img v-lazy=img3 alt="">
         </mt-swipe-item>
     </mt-swipe>
   </div>
@@ -25,7 +25,7 @@ export default {
 #lbtUI{
     width: 100%;
     height: 10rem;
-    background: skyblue;
+    /* background: skyblue; */
     margin: 1rem 0;
 }
 img{

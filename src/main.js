@@ -5,12 +5,13 @@ import App from './App'
 import router from './router'
 import store from './store'
 import Resource from 'vue-resource'
-import { Swipe, SwipeItem, MessageBox } from 'mint-ui'
+import { Swipe, SwipeItem, MessageBox, Lazyload } from 'mint-ui'
 import 'mint-ui/lib/style.css'
 
 Vue.component(Swipe.name, Swipe)
 Vue.component(SwipeItem.name, SwipeItem)
 Vue.prototype.$msg = MessageBox
+Vue.use(Lazyload)
 
 // http库
 Vue.use(Resource)

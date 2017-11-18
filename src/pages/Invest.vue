@@ -41,8 +41,8 @@
         </ul>
       </div>
       <div class="imgDB">
-        <img :src=imgs[20] alt="">
-        <img :src=imgs[21] alt="">
+        <img v-lazy=imgs[20] alt="">
+        <img v-lazy=imgs[21] alt="">
       </div>
       <lbt-u-i :img1=imgs[17] :img2=imgs[18] :img3=imgs[19]></lbt-u-i>
       <many menuHeaderName="最近热卖">

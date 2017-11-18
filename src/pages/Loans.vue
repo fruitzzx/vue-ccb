@@ -21,8 +21,8 @@
       </div>
       <many menuHeaderName=精彩推荐>
         <div class="advertising">
-          <img :src=imgs[22] alt="">
-          <img :src=imgs[23] alt="">
+          <img v-lazy=imgs[22] alt="">
+          <img v-lazy=imgs[23] alt="">
         </div>
       </many>
       <br>

@@ -44,7 +44,7 @@
       <lbt-u-i :img1=imgs[0] :img2=imgs[1] :img3=imgs[2]></lbt-u-i>
       <many menuHeaderName=龙支付>
         <div class="menuImg">
-            <img :src=imgs[3] alt="">
+            <img v-lazy=imgs[3] alt="">
         </div>
       </many>
       <many menuHeaderName=快速转账>
@@ -71,7 +71,7 @@
       <telephone-bill></telephone-bill>
       <many menuHeaderName=信用卡>
         <div class="menuCard">
-          <img :src=imgs[4] alt="">
+          <img v-lazy=imgs[4] alt="">
           <h3>LINEFRIENDS卡</h3>
           <p>超萌粉丝卡片</p>
           <p>粉丝专属礼遇</p>
@@ -126,14 +126,14 @@ export default {
     // 转账
     transfer () {
       if (this.loginBol) {
-        let url = 'http://10.3.151.203:8081/users?userName=' + this.transferName + '&userId=' + this.transferNum
+        let url = 'http://10.3.158.97:8081/users?userName=' + this.transferName + '&userId=' + this.transferNum
         this.$http.get(url)
           .then(res => {
             if (res.data.length > 0) {
               this.$msg.confirm('此操作无法撤销，确定执行?')
                 .then(action => {
-                  let loginUrl = `http://10.3.151.203:8081/users/${this.userInfo.id}`
-                  let passivityUrl = `http://10.3.151.203:8081/users/${res.data[0].id}`
+                  let loginUrl = `http://10.3.158.97:8081/users/${this.userInfo.id}`
+                  let passivityUrl = `http://10.3.158.97:8081/users/${res.data[0].id}`
                   // 转账人
                   this.$http.get(loginUrl)
                     .then(res => {

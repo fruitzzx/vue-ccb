@@ -33,7 +33,7 @@ export default {
     phoneBill () {
       if (this.loginBol) {
         if (this.phone !== '') {
-          let loginUrl = `http://10.3.151.203:8081/users/${this.userInfo.id}`
+          let loginUrl = `http://10.3.158.97:8081/users/${this.userInfo.id}`
           let money = parseInt((event.path[0].innerText).slice(1))
           this.$http.get(loginUrl)
             .then(res => {
