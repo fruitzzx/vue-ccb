@@ -29,6 +29,10 @@ export default {
 </script>
 
 <style>
+/* 隐藏滚动条 */
+::-webkit-scrollbar {
+    display: none;
+}
 *{
   margin: 0;
   padding: 0;
